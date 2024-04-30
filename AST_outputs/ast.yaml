@@ -1,0 +1,649 @@
+---
+root(Type=CompilationUnit): 
+    imports: 
+        - import(Type=ImportDeclaration): 
+            isAsterisk: "false"
+            isStatic: "false"
+            name(Type=Name): 
+                identifier: "ArrayList"
+                qualifier(Type=Name): 
+                    identifier: "util"
+                    qualifier(Type=Name): 
+                        identifier: "java"
+        - import(Type=ImportDeclaration): 
+            isAsterisk: "false"
+            isStatic: "false"
+            name(Type=Name): 
+                identifier: "List"
+                qualifier(Type=Name): 
+                    identifier: "util"
+                    qualifier(Type=Name): 
+                        identifier: "java"
+    types: 
+        - type(Type=ClassOrInterfaceDeclaration): 
+            isInterface: "false"
+            name(Type=SimpleName): 
+                identifier: "Staff"
+            members: 
+                - member(Type=ConstructorDeclaration): 
+                    body(Type=BlockStmt): 
+                        statements: 
+                            - statement(Type=ExpressionStmt): 
+                                expression(Type=AssignExpr): 
+                                    operator: "ASSIGN"
+                                    target(Type=FieldAccessExpr): 
+                                        name(Type=SimpleName): 
+                                            identifier: "staffId"
+                                        scope(Type=ThisExpr): 
+                                    value(Type=NameExpr): 
+                                        name(Type=SimpleName): 
+                                            identifier: "staffId"
+                            - statement(Type=ExpressionStmt): 
+                                expression(Type=AssignExpr): 
+                                    operator: "ASSIGN"
+                                    target(Type=FieldAccessExpr): 
+                                        name(Type=SimpleName): 
+                                            identifier: "name"
+                                        scope(Type=ThisExpr): 
+                                    value(Type=NameExpr): 
+                                        name(Type=SimpleName): 
+                                            identifier: "name"
+                    name(Type=SimpleName): 
+                        identifier: "Staff"
+                    modifiers: 
+                        - modifier(Type=Modifier): 
+                            keyword: "PUBLIC"
+                    parameters: 
+                        - parameter(Type=Parameter): 
+                            isVarArgs: "false"
+                            name(Type=SimpleName): 
+                                identifier: "staffId"
+                            type(Type=PrimitiveType): 
+                                type: "INT"
+                        - parameter(Type=Parameter): 
+                            isVarArgs: "false"
+                            name(Type=SimpleName): 
+                                identifier: "name"
+                            type(Type=ClassOrInterfaceType): 
+                                name(Type=SimpleName): 
+                                    identifier: "String"
+                - member(Type=MethodDeclaration): 
+                    body(Type=BlockStmt): 
+                        statements: 
+                            - statement(Type=ReturnStmt): 
+                                expression(Type=NameExpr): 
+                                    name(Type=SimpleName): 
+                                        identifier: "staffId"
+                    type(Type=PrimitiveType): 
+                        type: "INT"
+                    name(Type=SimpleName): 
+                        identifier: "getStaffId"
+                    modifiers: 
+                        - modifier(Type=Modifier): 
+                            keyword: "PUBLIC"
+                - member(Type=MethodDeclaration): 
+                    body(Type=BlockStmt): 
+                        statements: 
+                            - statement(Type=ReturnStmt): 
+                                expression(Type=NameExpr): 
+                                    name(Type=SimpleName): 
+                                        identifier: "name"
+                    type(Type=ClassOrInterfaceType): 
+                        name(Type=SimpleName): 
+                            identifier: "String"
+                    name(Type=SimpleName): 
+                        identifier: "getName"
+                    modifiers: 
+                        - modifier(Type=Modifier): 
+                            keyword: "PUBLIC"
+                - member(Type=FieldDeclaration): 
+                    modifiers: 
+                        - modifier(Type=Modifier): 
+                            keyword: "PRIVATE"
+                        - modifier(Type=Modifier): 
+                            keyword: "FINAL"
+                    variables: 
+                        - variable(Type=VariableDeclarator): 
+                            name(Type=SimpleName): 
+                                identifier: "staffId"
+                            type(Type=PrimitiveType): 
+                                type: "INT"
+                - member(Type=FieldDeclaration): 
+                    modifiers: 
+                        - modifier(Type=Modifier): 
+                            keyword: "PRIVATE"
+                        - modifier(Type=Modifier): 
+                            keyword: "FINAL"
+                    variables: 
+                        - variable(Type=VariableDeclarator): 
+                            name(Type=SimpleName): 
+                                identifier: "name"
+                            type(Type=ClassOrInterfaceType): 
+                                name(Type=SimpleName): 
+                                    identifier: "String"
+        - type(Type=ClassOrInterfaceDeclaration): 
+            isInterface: "false"
+            name(Type=SimpleName): 
+                identifier: "Course"
+            members: 
+                - member(Type=ConstructorDeclaration): 
+                    body(Type=BlockStmt): 
+                        statements: 
+                            - statement(Type=ExpressionStmt): 
+                                expression(Type=AssignExpr): 
+                                    operator: "ASSIGN"
+                                    target(Type=FieldAccessExpr): 
+                                        name(Type=SimpleName): 
+                                            identifier: "courseId"
+                                        scope(Type=ThisExpr): 
+                                    value(Type=NameExpr): 
+                                        name(Type=SimpleName): 
+                                            identifier: "courseId"
+                            - statement(Type=ExpressionStmt): 
+                                expression(Type=AssignExpr): 
+                                    operator: "ASSIGN"
+                                    target(Type=FieldAccessExpr): 
+                                        name(Type=SimpleName): 
+                                            identifier: "name"
+                                        scope(Type=ThisExpr): 
+                                    value(Type=NameExpr): 
+                                        name(Type=SimpleName): 
+                                            identifier: "name"
+                            - statement(Type=ExpressionStmt): 
+                                expression(Type=AssignExpr): 
+                                    operator: "ASSIGN"
+                                    target(Type=FieldAccessExpr): 
+                                        name(Type=SimpleName): 
+                                            identifier: "staffId"
+                                        scope(Type=ThisExpr): 
+                                    value(Type=NameExpr): 
+                                        name(Type=SimpleName): 
+                                            identifier: "staffId"
+                    name(Type=SimpleName): 
+                        identifier: "Course"
+                    modifiers: 
+                        - modifier(Type=Modifier): 
+                            keyword: "PUBLIC"
+                    parameters: 
+                        - parameter(Type=Parameter): 
+                            isVarArgs: "false"
+                            name(Type=SimpleName): 
+                                identifier: "courseId"
+                            type(Type=PrimitiveType): 
+                                type: "INT"
+                        - parameter(Type=Parameter): 
+                            isVarArgs: "false"
+                            name(Type=SimpleName): 
+                                identifier: "name"
+                            type(Type=ClassOrInterfaceType): 
+                                name(Type=SimpleName): 
+                                    identifier: "String"
+                        - parameter(Type=Parameter): 
+                            isVarArgs: "false"
+                            name(Type=SimpleName): 
+                                identifier: "staffId"
+                            type(Type=PrimitiveType): 
+                                type: "INT"
+                - member(Type=MethodDeclaration): 
+                    body(Type=BlockStmt): 
+                        statements: 
+                            - statement(Type=ReturnStmt): 
+                                expression(Type=NameExpr): 
+                                    name(Type=SimpleName): 
+                                        identifier: "courseId"
+                    type(Type=PrimitiveType): 
+                        type: "INT"
+                    name(Type=SimpleName): 
+                        identifier: "getCourseId"
+                    modifiers: 
+                        - modifier(Type=Modifier): 
+                            keyword: "PUBLIC"
+                - member(Type=MethodDeclaration): 
+                    body(Type=BlockStmt): 
+                        statements: 
+                            - statement(Type=ReturnStmt): 
+                                expression(Type=NameExpr): 
+                                    name(Type=SimpleName): 
+                                        identifier: "name"
+                    type(Type=ClassOrInterfaceType): 
+                        name(Type=SimpleName): 
+                            identifier: "String"
+                    name(Type=SimpleName): 
+                        identifier: "getName"
+                    modifiers: 
+                        - modifier(Type=Modifier): 
+                            keyword: "PUBLIC"
+                - member(Type=MethodDeclaration): 
+                    body(Type=BlockStmt): 
+                        statements: 
+                            - statement(Type=ReturnStmt): 
+                                expression(Type=NameExpr): 
+                                    name(Type=SimpleName): 
+                                        identifier: "staffId"
+                    type(Type=PrimitiveType): 
+                        type: "INT"
+                    name(Type=SimpleName): 
+                        identifier: "getStaffId"
+                    modifiers: 
+                        - modifier(Type=Modifier): 
+                            keyword: "PUBLIC"
+                - member(Type=FieldDeclaration): 
+                    modifiers: 
+                        - modifier(Type=Modifier): 
+                            keyword: "PRIVATE"
+                        - modifier(Type=Modifier): 
+                            keyword: "FINAL"
+                    variables: 
+                        - variable(Type=VariableDeclarator): 
+                            name(Type=SimpleName): 
+                                identifier: "courseId"
+                            type(Type=PrimitiveType): 
+                                type: "INT"
+                - member(Type=FieldDeclaration): 
+                    modifiers: 
+                        - modifier(Type=Modifier): 
+                            keyword: "PRIVATE"
+                        - modifier(Type=Modifier): 
+                            keyword: "FINAL"
+                    variables: 
+                        - variable(Type=VariableDeclarator): 
+                            name(Type=SimpleName): 
+                                identifier: "name"
+                            type(Type=ClassOrInterfaceType): 
+                                name(Type=SimpleName): 
+                                    identifier: "String"
+                - member(Type=FieldDeclaration): 
+                    modifiers: 
+                        - modifier(Type=Modifier): 
+                            keyword: "PRIVATE"
+                        - modifier(Type=Modifier): 
+                            keyword: "FINAL"
+                    variables: 
+                        - variable(Type=VariableDeclarator): 
+                            name(Type=SimpleName): 
+                                identifier: "staffId"
+                            type(Type=PrimitiveType): 
+                                type: "INT"
+        - type(Type=ClassOrInterfaceDeclaration): 
+            isInterface: "false"
+            name(Type=SimpleName): 
+                identifier: "Main"
+            members: 
+                - member(Type=MethodDeclaration): 
+                    body(Type=BlockStmt): 
+                        statements: 
+                            - statement(Type=ExpressionStmt): 
+                                expression(Type=VariableDeclarationExpr): 
+                                    variables: 
+                                        - variable(Type=VariableDeclarator): 
+                                            initializer(Type=ArrayInitializerExpr): 
+                                                values: 
+                                                    - value(Type=ObjectCreationExpr): 
+                                                        type(Type=ClassOrInterfaceType): 
+                                                            name(Type=SimpleName): 
+                                                                identifier: "Staff"
+                                                        arguments: 
+                                                            - argument(Type=IntegerLiteralExpr): 
+                                                                value: "1"
+                                                            - argument(Type=StringLiteralExpr): 
+                                                                value: "Alice"
+                                                    - value(Type=ObjectCreationExpr): 
+                                                        type(Type=ClassOrInterfaceType): 
+                                                            name(Type=SimpleName): 
+                                                                identifier: "Staff"
+                                                        arguments: 
+                                                            - argument(Type=IntegerLiteralExpr): 
+                                                                value: "2"
+                                                            - argument(Type=StringLiteralExpr): 
+                                                                value: "Bob"
+                                            name(Type=SimpleName): 
+                                                identifier: "staffs"
+                                            type(Type=ArrayType): 
+                                                origin: "TYPE"
+                                                componentType(Type=ClassOrInterfaceType): 
+                                                    name(Type=SimpleName): 
+                                                        identifier: "Staff"
+                                comment(Type=LineComment): 
+                                    content: " Sample data"
+                            - statement(Type=ExpressionStmt): 
+                                expression(Type=VariableDeclarationExpr): 
+                                    variables: 
+                                        - variable(Type=VariableDeclarator): 
+                                            initializer(Type=ArrayInitializerExpr): 
+                                                values: 
+                                                    - value(Type=ObjectCreationExpr): 
+                                                        type(Type=ClassOrInterfaceType): 
+                                                            name(Type=SimpleName): 
+                                                                identifier: "Course"
+                                                        arguments: 
+                                                            - argument(Type=IntegerLiteralExpr): 
+                                                                value: "101"
+                                                            - argument(Type=StringLiteralExpr): 
+                                                                value: "Programming 101"
+                                                            - argument(Type=IntegerLiteralExpr): 
+                                                                value: "1"
+                                                    - value(Type=ObjectCreationExpr): 
+                                                        type(Type=ClassOrInterfaceType): 
+                                                            name(Type=SimpleName): 
+                                                                identifier: "Course"
+                                                        arguments: 
+                                                            - argument(Type=IntegerLiteralExpr): 
+                                                                value: "102"
+                                                            - argument(Type=StringLiteralExpr): 
+                                                                value: "Data Analysis"
+                                                            - argument(Type=IntegerLiteralExpr): 
+                                                                value: "2"
+                                            name(Type=SimpleName): 
+                                                identifier: "courses"
+                                            type(Type=ArrayType): 
+                                                origin: "TYPE"
+                                                componentType(Type=ClassOrInterfaceType): 
+                                                    name(Type=SimpleName): 
+                                                        identifier: "Course"
+                            - statement(Type=ExpressionStmt): 
+                                expression(Type=VariableDeclarationExpr): 
+                                    variables: 
+                                        - variable(Type=VariableDeclarator): 
+                                            initializer(Type=IntegerLiteralExpr): 
+                                                value: "1"
+                                            name(Type=SimpleName): 
+                                                identifier: "staffId"
+                                            type(Type=PrimitiveType): 
+                                                type: "INT"
+                                comment(Type=LineComment): 
+                                    content: " Example usage"
+                            - statement(Type=ExpressionStmt): 
+                                expression(Type=VariableDeclarationExpr): 
+                                    variables: 
+                                        - variable(Type=VariableDeclarator): 
+                                            initializer(Type=MethodCallExpr): 
+                                                name(Type=SimpleName): 
+                                                    identifier: "getStaffCourses"
+                                                arguments: 
+                                                    - argument(Type=NameExpr): 
+                                                        name(Type=SimpleName): 
+                                                            identifier: "staffId"
+                                                    - argument(Type=NameExpr): 
+                                                        name(Type=SimpleName): 
+                                                            identifier: "courses"
+                                            name(Type=SimpleName): 
+                                                identifier: "staffCourses"
+                                            type(Type=ArrayType): 
+                                                origin: "TYPE"
+                                                componentType(Type=ClassOrInterfaceType): 
+                                                    name(Type=SimpleName): 
+                                                        identifier: "Course"
+                            - statement(Type=ExpressionStmt): 
+                                expression(Type=MethodCallExpr): 
+                                    name(Type=SimpleName): 
+                                        identifier: "println"
+                                    scope(Type=FieldAccessExpr): 
+                                        name(Type=SimpleName): 
+                                            identifier: "out"
+                                        scope(Type=NameExpr): 
+                                            name(Type=SimpleName): 
+                                                identifier: "System"
+                                    arguments: 
+                                        - argument(Type=BinaryExpr): 
+                                            operator: "PLUS"
+                                            left(Type=BinaryExpr): 
+                                                operator: "PLUS"
+                                                left(Type=BinaryExpr): 
+                                                    operator: "PLUS"
+                                                    left(Type=BinaryExpr): 
+                                                        operator: "PLUS"
+                                                        left(Type=StringLiteralExpr): 
+                                                            value: "Staff: "
+                                                        right(Type=MethodCallExpr): 
+                                                            name(Type=SimpleName): 
+                                                                identifier: "getName"
+                                                            scope(Type=ArrayAccessExpr): 
+                                                                index(Type=BinaryExpr): 
+                                                                    operator: "MINUS"
+                                                                    left(Type=NameExpr): 
+                                                                        name(Type=SimpleName): 
+                                                                            identifier: "staffId"
+                                                                    right(Type=IntegerLiteralExpr): 
+                                                                        value: "1"
+                                                                name(Type=NameExpr): 
+                                                                    name(Type=SimpleName): 
+                                                                        identifier: "staffs"
+                                                    right(Type=StringLiteralExpr): 
+                                                        value: " ("
+                                                right(Type=MethodCallExpr): 
+                                                    name(Type=SimpleName): 
+                                                        identifier: "getStaffId"
+                                                    scope(Type=ArrayAccessExpr): 
+                                                        index(Type=BinaryExpr): 
+                                                            operator: "MINUS"
+                                                            left(Type=NameExpr): 
+                                                                name(Type=SimpleName): 
+                                                                    identifier: "staffId"
+                                                            right(Type=IntegerLiteralExpr): 
+                                                                value: "1"
+                                                        name(Type=NameExpr): 
+                                                            name(Type=SimpleName): 
+                                                                identifier: "staffs"
+                                            right(Type=StringLiteralExpr): 
+                                                value: ")"
+                                comment(Type=LineComment): 
+                                    content: " Print staff information and courses taught"
+                            - statement(Type=IfStmt): 
+                                condition(Type=BinaryExpr): 
+                                    operator: "GREATER"
+                                    left(Type=FieldAccessExpr): 
+                                        name(Type=SimpleName): 
+                                            identifier: "length"
+                                        scope(Type=NameExpr): 
+                                            name(Type=SimpleName): 
+                                                identifier: "staffCourses"
+                                    right(Type=IntegerLiteralExpr): 
+                                        value: "0"
+                                elseStmt(Type=BlockStmt): 
+                                    statements: 
+                                        - statement(Type=ExpressionStmt): 
+                                            expression(Type=MethodCallExpr): 
+                                                name(Type=SimpleName): 
+                                                    identifier: "println"
+                                                scope(Type=FieldAccessExpr): 
+                                                    name(Type=SimpleName): 
+                                                        identifier: "out"
+                                                    scope(Type=NameExpr): 
+                                                        name(Type=SimpleName): 
+                                                            identifier: "System"
+                                                arguments: 
+                                                    - argument(Type=StringLiteralExpr): 
+                                                        value: "This staff member does not teach any courses."
+                                thenStmt(Type=BlockStmt): 
+                                    statements: 
+                                        - statement(Type=ExpressionStmt): 
+                                            expression(Type=MethodCallExpr): 
+                                                name(Type=SimpleName): 
+                                                    identifier: "println"
+                                                scope(Type=FieldAccessExpr): 
+                                                    name(Type=SimpleName): 
+                                                        identifier: "out"
+                                                    scope(Type=NameExpr): 
+                                                        name(Type=SimpleName): 
+                                                            identifier: "System"
+                                                arguments: 
+                                                    - argument(Type=StringLiteralExpr): 
+                                                        value: "Courses Taught:"
+                                        - statement(Type=ForEachStmt): 
+                                            body(Type=BlockStmt): 
+                                                statements: 
+                                                    - statement(Type=ExpressionStmt): 
+                                                        expression(Type=MethodCallExpr): 
+                                                            name(Type=SimpleName): 
+                                                                identifier: "println"
+                                                            scope(Type=FieldAccessExpr): 
+                                                                name(Type=SimpleName): 
+                                                                    identifier: "out"
+                                                                scope(Type=NameExpr): 
+                                                                    name(Type=SimpleName): 
+                                                                        identifier: "System"
+                                                            arguments: 
+                                                                - argument(Type=BinaryExpr): 
+                                                                    operator: "PLUS"
+                                                                    left(Type=BinaryExpr): 
+                                                                        operator: "PLUS"
+                                                                        left(Type=BinaryExpr): 
+                                                                            operator: "PLUS"
+                                                                            left(Type=BinaryExpr): 
+                                                                                operator: "PLUS"
+                                                                                left(Type=StringLiteralExpr): 
+                                                                                    value: "- "
+                                                                                right(Type=MethodCallExpr): 
+                                                                                    name(Type=SimpleName): 
+                                                                                        identifier: "getName"
+                                                                                    scope(Type=NameExpr): 
+                                                                                        name(Type=SimpleName): 
+                                                                                            identifier: "course"
+                                                                            right(Type=StringLiteralExpr): 
+                                                                                value: " ("
+                                                                        right(Type=MethodCallExpr): 
+                                                                            name(Type=SimpleName): 
+                                                                                identifier: "getCourseId"
+                                                                            scope(Type=NameExpr): 
+                                                                                name(Type=SimpleName): 
+                                                                                    identifier: "course"
+                                                                    right(Type=StringLiteralExpr): 
+                                                                        value: ")"
+                                            iterable(Type=NameExpr): 
+                                                name(Type=SimpleName): 
+                                                    identifier: "staffCourses"
+                                            variable(Type=VariableDeclarationExpr): 
+                                                variables: 
+                                                    - variable(Type=VariableDeclarator): 
+                                                        name(Type=SimpleName): 
+                                                            identifier: "course"
+                                                        type(Type=ClassOrInterfaceType): 
+                                                            name(Type=SimpleName): 
+                                                                identifier: "Course"
+                    type(Type=VoidType): 
+                    name(Type=SimpleName): 
+                        identifier: "main"
+                    modifiers: 
+                        - modifier(Type=Modifier): 
+                            keyword: "PUBLIC"
+                        - modifier(Type=Modifier): 
+                            keyword: "STATIC"
+                    parameters: 
+                        - parameter(Type=Parameter): 
+                            isVarArgs: "false"
+                            name(Type=SimpleName): 
+                                identifier: "args"
+                            type(Type=ArrayType): 
+                                origin: "TYPE"
+                                componentType(Type=ClassOrInterfaceType): 
+                                    name(Type=SimpleName): 
+                                        identifier: "String"
+                - member(Type=MethodDeclaration): 
+                    body(Type=BlockStmt): 
+                        statements: 
+                            - statement(Type=ExpressionStmt): 
+                                expression(Type=VariableDeclarationExpr): 
+                                    variables: 
+                                        - variable(Type=VariableDeclarator): 
+                                            initializer(Type=ObjectCreationExpr): 
+                                                type(Type=ClassOrInterfaceType): 
+                                                    name(Type=SimpleName): 
+                                                        identifier: "ArrayList"
+                                            name(Type=SimpleName): 
+                                                identifier: "staffCourses"
+                                            type(Type=ClassOrInterfaceType): 
+                                                name(Type=SimpleName): 
+                                                    identifier: "List"
+                                                typeArguments: 
+                                                    - typeArgument(Type=ClassOrInterfaceType): 
+                                                        name(Type=SimpleName): 
+                                                            identifier: "Course"
+                            - statement(Type=ForEachStmt): 
+                                body(Type=BlockStmt): 
+                                    statements: 
+                                        - statement(Type=IfStmt): 
+                                            condition(Type=BinaryExpr): 
+                                                operator: "EQUALS"
+                                                left(Type=MethodCallExpr): 
+                                                    name(Type=SimpleName): 
+                                                        identifier: "getStaffId"
+                                                    scope(Type=NameExpr): 
+                                                        name(Type=SimpleName): 
+                                                            identifier: "course"
+                                                right(Type=NameExpr): 
+                                                    name(Type=SimpleName): 
+                                                        identifier: "staffId"
+                                            thenStmt(Type=BlockStmt): 
+                                                statements: 
+                                                    - statement(Type=ExpressionStmt): 
+                                                        expression(Type=MethodCallExpr): 
+                                                            name(Type=SimpleName): 
+                                                                identifier: "add"
+                                                            scope(Type=NameExpr): 
+                                                                name(Type=SimpleName): 
+                                                                    identifier: "staffCourses"
+                                                            arguments: 
+                                                                - argument(Type=NameExpr): 
+                                                                    name(Type=SimpleName): 
+                                                                        identifier: "course"
+                                iterable(Type=NameExpr): 
+                                    name(Type=SimpleName): 
+                                        identifier: "courses"
+                                variable(Type=VariableDeclarationExpr): 
+                                    variables: 
+                                        - variable(Type=VariableDeclarator): 
+                                            name(Type=SimpleName): 
+                                                identifier: "course"
+                                            type(Type=ClassOrInterfaceType): 
+                                                name(Type=SimpleName): 
+                                                    identifier: "Course"
+                            - statement(Type=ReturnStmt): 
+                                expression(Type=MethodCallExpr): 
+                                    name(Type=SimpleName): 
+                                        identifier: "toArray"
+                                    scope(Type=NameExpr): 
+                                        name(Type=SimpleName): 
+                                            identifier: "staffCourses"
+                                    arguments: 
+                                        - argument(Type=ArrayCreationExpr): 
+                                            elementType(Type=ClassOrInterfaceType): 
+                                                name(Type=SimpleName): 
+                                                    identifier: "Course"
+                                            levels: 
+                                                - level(Type=ArrayCreationLevel): 
+                                                    dimension(Type=IntegerLiteralExpr): 
+                                                        value: "0"
+                    type(Type=ArrayType): 
+                        origin: "TYPE"
+                        componentType(Type=ClassOrInterfaceType): 
+                            name(Type=SimpleName): 
+                                identifier: "Course"
+                    name(Type=SimpleName): 
+                        identifier: "getStaffCourses"
+                    comment(Type=LineComment): 
+                        content: " Function to find courses taught by a particular staff member"
+                    modifiers: 
+                        - modifier(Type=Modifier): 
+                            keyword: "PUBLIC"
+                        - modifier(Type=Modifier): 
+                            keyword: "STATIC"
+                    parameters: 
+                        - parameter(Type=Parameter): 
+                            isVarArgs: "false"
+                            name(Type=SimpleName): 
+                                identifier: "staffId"
+                            type(Type=PrimitiveType): 
+                                type: "INT"
+                        - parameter(Type=Parameter): 
+                            isVarArgs: "false"
+                            name(Type=SimpleName): 
+                                identifier: "courses"
+                            type(Type=ArrayType): 
+                                origin: "TYPE"
+                                componentType(Type=ClassOrInterfaceType): 
+                                    name(Type=SimpleName): 
+                                        identifier: "Course"
+            modifiers: 
+                - modifier(Type=Modifier): 
+                    keyword: "PUBLIC"
+...
