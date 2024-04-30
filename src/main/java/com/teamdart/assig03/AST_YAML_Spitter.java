@@ -1,12 +1,9 @@
 package com.teamdart.assig03;
-//package com.github.javaparser;
 
 import com.github.javaparser.StaticJavaParser;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.printer.YamlPrinter;
-
 import java.io.*;
-//import java.util.Scanner;
 
 /**
  * Some code that uses JavaParser.
