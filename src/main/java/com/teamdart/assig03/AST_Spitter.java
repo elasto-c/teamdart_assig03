@@ -28,18 +28,6 @@ import java.io.*;
 
 public class AST_Spitter {
     public static void main( String[] args ) throws FileNotFoundException {
-        /*//Get file as String
-        try {
-            File myObj = new File("filename.txt");
-            Scanner myReader = new Scanner(myObj);
-            while (myReader.hasNextLine()) {
-                String data = myReader.nextLine();
-            }
-            myReader.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }*/
 
         // Parse the code you want to inspect:
         CompilationUnit cu = StaticJavaParser.parse(new File("src/main/resources/Main.java"));
